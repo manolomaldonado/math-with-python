@@ -1,11 +1,11 @@
 from turtle import *
 
 shape('arrow')
-speed(10)
+speed(1000)
 
-def circulo() :
+def circulo(size=10) :
     for i in range(24) :
-        forward(10)
+        forward(size)
         left(15)
 
 def cuadrado(lado=100) :
@@ -33,3 +33,15 @@ def mult(x, y) :
 
     
 print (mult(12,12))
+for i in range(6) :
+    for j in range(100) :
+        forward(10+j)
+        left(30)
+    penup()
+    setposition(0,0)
+    pendown()
+    left(60)
+
+
+
+    
