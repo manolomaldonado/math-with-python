@@ -8,6 +8,19 @@ def circulo(size=10) :
         forward(size)
         left(15)
 
+def multiplicar(x,y):
+    resultado=0
+    for i in range(y):
+        resultado=resultado + x
+    return resultado
+
+def potencia(g,h):
+    resultado=1
+    for i in range(h):
+        resultado=multiplicar(resultado,g)
+    return resultado
+        
+
 def cuadrado(lado=100) :
     for i in range(4) :
         forward(lado)
@@ -31,17 +44,9 @@ def mult(x, y) :
         x = x+y
     return x
 
-    
-print (mult(12,12))
-for i in range(6) :
-    for j in range(100) :
-        forward(10+j)
-        left(30)
-    penup()
-    setposition(0,0)
-    pendown()
-    left(60)
 
+print(multiplicar(12,12))
+print(potencia(12,2))
 
 
     

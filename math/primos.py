@@ -3,7 +3,7 @@ import time
 def get_primos() :
     i = 1
     j = 1
-    while j < 10001 :
+    while j < 1001 :
         if is_primo(i) : 
             print("Primo numero ", j," : ",i)
             j += 1
